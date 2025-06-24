@@ -21,7 +21,7 @@ if(isset($_POST['submitbtn'])){
                 exit;
             }else{
                 move_uploaded_file($image_tmp, $folder);
-                echo'<script>window.location.href = 'view.php';</script>'
+                echo'<script>window.location.href = "view.php";</script>'
             }
         }else{
             echo "<script>alert('Images not uploaded')</script>";
